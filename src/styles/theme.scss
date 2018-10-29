@@ -1,0 +1,14 @@
+@import './colors';
+
+$primary: #0075bf;
+$primaryText: #000;
+$accent: #ff5252;
+$accentText: #000;
+
+
+@mixin theme($primaryColor, $accentColor) {
+    $primary: $primaryColor !global;
+    $primaryText: choose-contrast-color($primaryColor) !global;
+    $accent: $accentColor !global;
+    $accentText: choose-contrast-color($accentColor) !global;
+}

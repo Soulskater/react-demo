@@ -1,0 +1,24 @@
+@import '../../styles/theme';
+
+.material-button{
+    $height: 44px;
+    height: $height;
+    min-width: 130px;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    opacity: 1;
+    transition: background-color 300ms ease-in-out;
+    transition: opacity 200ms;
+    max-width: 560px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &.curved{
+        border-radius: $height/2;
+    }
+    &.rounded{
+        border-radius: 3px;
+    }
+}
